@@ -66,7 +66,7 @@ html {
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   font-family: var(--default-font);
 }
 
@@ -508,7 +508,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   padding: 60px 0;
   overflow: clip;
 }
@@ -766,10 +766,6 @@ section,
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: var(--text-secondary);
-}
-
-.resume .resume-item p {
   color: var(--text-secondary);
 }
 
@@ -1301,6 +1297,6 @@ section,
 /* Start Navbar */
 
 .navbar {
-  background: #00000059;
-  backdrop-filter: blur(2px);
+  background: #2125293d;
+  backdrop-filter: blur(5px);
 }
