@@ -702,10 +702,6 @@ section,
   border-radius: 0;
 }
 
-.skills {
-  scroll-margin-top: 60px;
-}
-
 .skills .progress .skill {
   color: var(--text-subheader);
   padding: 0;
