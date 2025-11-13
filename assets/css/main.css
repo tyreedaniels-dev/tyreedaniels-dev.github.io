@@ -21,7 +21,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #020311; /* Background color for the entire website, including individual sections */
+  --background-color: white; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -396,7 +396,6 @@ h6 {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: var(--background-color);
   transition: all 0.6s ease-out;
 }
 
@@ -527,7 +526,6 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: white;
 }
 
 .section-title h2:after {
@@ -569,13 +567,13 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+/* .hero:before {
   content: '';
   background: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
-}
+} */
 
 .hero .container {
   position: relative;
@@ -703,7 +701,7 @@ section,
 }
 
 .skills .progress .skill {
-  color: var(--text-subheader);
+  color: var(--text-secondary);
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -718,7 +716,7 @@ section,
 }
 
 .skills .progress-bar-wrap {
-  background: var(--text-secondary);
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
   height: 10px;
 }
 
@@ -733,7 +731,6 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-title {
-  color: var(--text-subheader);
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -816,7 +813,7 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--text-subheader);
+  color: var(--accent-color);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -942,7 +939,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-  color: var(--text-subheader);
+  color: var(--text-secondary);
 }
 
 .services .service-item .description {
@@ -1293,6 +1290,20 @@ section,
 /* Start Navbar */
 
 .navbar {
-  background: #2125293d;
+  background: #21252978;
   backdrop-filter: blur(5px);
+}
+
+.hero-name {
+  background: -webkit-linear-gradient(#ffffff, #7bfefc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title {
+  color: #79fefd;
+}
+
+.typed {
+  color: #7bfefc;
 }

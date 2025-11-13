@@ -37,7 +37,8 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
+    <!-- particles styles -->
+    <link rel="stylesheet" media="screen" href="css/style.css" />
     <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -62,7 +63,7 @@
   </head>
 
   <body
-    class="index-page bg-dark"
+    class="index-page"
     data-bs-spy="scroll"
     data-bs-target=".navbar"
     data-bs-offset="50"
@@ -99,20 +100,20 @@
         </div>
       </div>
     </nav>
-
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100vh;"></div>
     <main class="main" id="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section">
+        <section id="hero" class="hero section">
         <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="" />
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="text-white">Tyree Daniels</h2>
-          <p class="text-secondary">
-            <strong>Senior Software Engineer</strong>
+          <h2 class="hero-name">Tyree Daniels</h2>
+          <h3 class="text-light">
+            <strong class="hero-title">Senior Software Engineer</strong>
             skilled in
             <span
               class="typed"
-              data-typed-items="Full Stack, Web and Mobile Apps, AI Solutions"
+              data-typed-items="Web and Mobile Apps, AI Solutions"
             ></span>
             <span
               class="typed-cursor typed-cursor--blink"
@@ -122,16 +123,18 @@
               class="typed-cursor typed-cursor--blink"
               aria-hidden="true"
             ></span>
-          </p>
+          </h3>
         </div>
       </section>
+      </div>
+      
       <!-- /Hero Section -->
 
       <!-- About Section -->
       <section id="about" class="about section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2 class="text-white">About</h2>
+          <h2>About</h2>
           <p class="text-secondary">
             I’m a senior full stack engineer with over a decade of experience
             turning ideas into elegant, high-performing web, mobile, and
@@ -139,22 +142,6 @@
             solving complex problems with simple, scalable solutions.
           </p>
         </div>
-        <!-- End Section Title -->
-        <!-- 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 justify-content-center">
-            <div class="col-lg-4">
-              <img
-                src="assets/img/my-profile-img.jpg"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="col-lg-8">
-            </div>
-          </div>
-        </div> -->
-        <!-- Stats Section -->
         <div id="stats" class="stats">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
@@ -165,7 +152,7 @@
                     data-purecounter-start="0"
                     data-purecounter-end="50"
                     data-purecounter-duration="1"
-                    class="purecounter text-light"
+                    class="purecounter"
                   ></span>
                   <p><strong>Projects Delivered</strong></p>
                 </div>
@@ -179,7 +166,7 @@
                     data-purecounter-start="0"
                     data-purecounter-end="20"
                     data-purecounter-duration="1"
-                    class="purecounter text-light"
+                    class="purecounter"
                   ></span>
                   <p><strong>Clients Served</strong></p>
                 </div>
@@ -193,7 +180,7 @@
                     data-purecounter-start="0"
                     data-purecounter-end="15"
                     data-purecounter-duration="1"
-                    class="purecounter text-light"
+                    class="purecounter"
                   ></span>
                   <p><strong>Techonologies Mastered</strong></p>
                 </div>
@@ -207,7 +194,7 @@
                     data-purecounter-start="0"
                     data-purecounter-end="30"
                     data-purecounter-duration="1"
-                    class="purecounter text-light"
+                    class="purecounter"
                   ></span>
                   <p><strong>AI Features Integrated</strong></p>
                 </div>
@@ -221,10 +208,10 @@
       <!-- /About Section -->
 
       <!-- Skills Section -->
-      <section id="skills" class="skills section">
+      <section id="skills" class="skills section bg-light">
         <!-- Section Title -->
         <div class="container section-title pb-3" data-aos="fade-up">
-          <h2 class="text-white">Skills</h2>
+          <h2>Skills</h2>
           <p class="text-secondary">
             I turn ideas into polished apps—web, mobile, or AI-driven—with clean
             code and smooth UX.
@@ -236,7 +223,7 @@
           <div class="row skills-content skills-animation">
             <div class="col-lg-6">
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>HTML & CSS</span>
                   <i class="val">100%</i>
                 </span>
@@ -253,7 +240,7 @@
               <!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>JavaScript & Frameworks</span>
                   <i class="val">95%</i>
                 </span>
@@ -270,7 +257,7 @@
               <!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>CMS</span>
                   <i class="val">90%</i>
                 </span>
@@ -289,7 +276,7 @@
 
             <div class="col-lg-6">
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>Mobile Development</span>
                   <i class="val">92%</i>
                 </span>
@@ -306,7 +293,7 @@
               <!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>AI & Python</span>
                   <i class="val">85%</i>
                 </span>
@@ -323,7 +310,7 @@
               <!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill text-light">
+                <span class="skill text-secondary">
                   <span>Database & DevOps</span>
                   <i class="val">88%</i>
                 </span>
@@ -348,7 +335,7 @@
       <section id="services" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2 class="text-white">Services</h2>
+          <h2>Services</h2>
           <p class="text-secondary">
             Whether it’s web, mobile, or AI—I turn ideas into polished,
             high-performing products.
@@ -367,7 +354,7 @@
                 <i class="bi bi-layers"></i>
               </div>
               <div>
-                <h4 class="title text-light">Full Stack Development</h4>
+                <h4 class="title">Full Stack Development</h4>
                 <p class="description text-secondary">
                   Robust, scalable web applications built from the ground
                   up—frontend to backend—with clean architecture and fast
@@ -386,7 +373,7 @@
                 <i class="bi bi-phone-landscape"></i>
               </div>
               <div>
-                <h4 class="title text-light">Web & Mobile App Engineering</h4>
+                <h4 class="title">Web & Mobile App Engineering</h4>
                 <p class="description text-secondary">
                   Pixel-perfect, responsive interfaces for web and mobile using
                   React, Vue, Flutter, and native tools. Optimized for speed,
@@ -405,7 +392,7 @@
                 <i class="bi bi-robot"></i>
               </div>
               <div>
-                <h4 class="title text-white">AI-Powered Solutions</h4>
+                <h4 class="title">AI-Powered Solutions</h4>
                 <p class="description text-secondary">
                   Smart features powered by machine learning, NLP, and
                   automation—integrated seamlessly into your product to unlock
@@ -424,7 +411,7 @@
                 <i class="bi bi-database"></i>
               </div>
               <div>
-                <h4 class="title text-white">API & Database Design</h4>
+                <h4 class="title">API & Database Design</h4>
                 <p class="description text-secondary">
                   Secure, efficient APIs and data models using REST, GraphQL,
                   PostgreSQL, MySQL, and MongoDB. Built for speed, reliability,
@@ -443,7 +430,7 @@
                 <i class="bi bi-cloud-upload"></i>
               </div>
               <div>
-                <h4 class="title text-white">DevOps & Deployment</h4>
+                <h4 class="title">DevOps & Deployment</h4>
                 <p class="description text-secondary">
                   CI/CD pipelines, Dockerized environments, and cloud
                   deployments via AWS, Vercel, or Netlify—ensuring smooth
@@ -462,7 +449,7 @@
                 <i class="bi bi-journal-code"></i>
               </div>
               <div>
-                <h4 class="title text-white">Technical Documentation</h4>
+                <h4 class="title">Technical Documentation</h4>
                 <p class="description text-secondary">
                   Unified README files, onboarding guides, and reproducible
                   workflows that make your codebase client-ready and
@@ -477,7 +464,7 @@
       <!-- /Services Section -->
 
       <!-- Resume Section -->
-      <section id="resume" class="resume section">
+      <section id="resume" class="resume section bg-light">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Resume</h2>
@@ -491,7 +478,7 @@
         <div class="container text-secondary">
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title text-light">Professional Experience</h3>
+              <h3 class="resume-title text-secondary">Professional Experience</h3>
               <div class="resume-item">
                 <h4>Senior Software Engineer — Full Stack | Infrastructure</h4>
                 <h5>12/2018 - 10/2024</h5>
@@ -554,7 +541,7 @@
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title text-light">Education</h3>
+              <h3 class="resume-title text-secondary">Education</h3>
               <div class="resume-item">
                 <h4>Bachelor of Science in Computer Science</h4>
                 <h5>2019 - 2021</h5>
@@ -597,7 +584,6 @@
               <li data-filter=".filter-mobile">Mobile</li>
               <li data-filter=".filter-ai">AI</li>
               <li data-filter=".filter-cms">CMS</li>
-              <li data-filter=".filter-web-scrap">Web Scraping</li>
             </ul>
             <!-- End Portfolio Filters -->
 
@@ -899,102 +885,6 @@
                 </div>
               </div>
               <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web-scrap"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/linkedin.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Linkedin Scrap</h4>
-                    <p>Scrape leads from Linkedin</p>
-                    <a
-                      href="assets/img/portfolio/linkedin.jpg"
-                      title="Scrape leads from Linkedin"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                    >
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="javascript:;"
-                      title="More Details"
-                      class="details-link"
-                    >
-                      <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web-scrap"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/web-scraping.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>trade.smiffys.com Web Scraping</h4>
-                    <p>Scrape all 14000 products from trade.smiffys.com</p>
-                    <a
-                      href="assets/img/portfolio/web scraping.JPG"
-                      title="Scrape all 14000 products from trade.smiffys.com"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                    >
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="javascript:;"
-                      title="More Details"
-                      class="details-link"
-                    >
-                      <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web-scrap"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/VBA_scraper.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Web Scrapper</h4>
-                    <p>VBA + Selenium scraper</p>
-                    <a
-                      href="assets/img/portfolio/VBA_scraper.jpg"
-                      title="VBA + Selenium scraper"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                    >
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                    <a
-                      href="javascript:;"
-                      title="More Details"
-                      class="details-link"
-                    >
-                      <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
             </div>
             <!-- End Portfolio Container -->
           </div>
@@ -1003,12 +893,12 @@
       <!-- /Portfolio Section -->
     </main>
 
-    <footer class="bg-dark">
-      <div class="container border-top pt-4 border-secondary">
+    <footer class="bg-light">
+      <div class="container pt-4">
         <div class="copyright text-secondary text-center">
           <p class="text-secondary">
             Designed by
-            <b class="text-white h6">Tyree Daniels</b>
+            <b class="h6 text-uppercase">Tyree Daniels</b>
           </p>
         </div>
       </div>
@@ -1041,6 +931,10 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- stats.js -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
